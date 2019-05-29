@@ -9,6 +9,11 @@ import Routes from "../../Routes";
 import { Switch, Route, withRouter } from "react-router-dom";
 
 
+import Charts from "./Charts"
+import Calendar from "../Calendar/Calendar"
+import Services from "../Services/Services";
+import Customers from "../Customers/Customers";
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -69,7 +74,10 @@ class Dashboard extends React.Component {
         <main className={classNames(classes.content, classes.contentShift)}>
           <div className={classes.drawerHeader} />
           <Switch>
- 
+            <Route exact path="/dashboard" component={Charts} />
+            <Route path="/dashboard/calendar" component={Calendar} />
+            <Route path="/dashboard/services" component={Services} />
+            <Route path="/dashboard/customers" component={Customers} />
           </Switch>
         </main>
       </div>
