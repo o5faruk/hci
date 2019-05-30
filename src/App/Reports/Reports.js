@@ -43,7 +43,7 @@ class Services extends Component {
         return (
             <Grid container>
                 <Grid md={3}>
-                    <Card className="mt-2">
+                    <Card style={{ marginTop: "24px" }}>
                         <TextField label="Start Time" className="w-100" />
                         <TextField label="End Time" className="w-100" />
                     </Card>

@@ -81,38 +81,6 @@ const Header = props => {
             onClick={handleMenuOpen}
             color="inherit"
           >
-            <ChatOutlined />
-          </IconButton>
-          <IconButton
-            aria-owns={menuOpen ? 'menu-appbar' : undefined}
-            aria-haspopup="true"
-            onClick={handleMenuOpen}
-            color="inherit"
-          >
-            <NotificationsOutlined />
-          </IconButton>
-          <IconButton
-            aria-owns={menuOpen ? 'menu-appbar' : undefined}
-            aria-haspopup="true"
-            onClick={handleMenuOpen}
-            color="inherit"
-          >
-            <AccountCircleOutlined />
-          </IconButton>
-          <IconButton
-            aria-owns={menuOpen ? 'menu-appbar' : undefined}
-            aria-haspopup="true"
-            onClick={handleMenuOpen}
-            color="inherit"
-          >
-            <ContactSupportOutlined />
-          </IconButton>
-          <IconButton
-            aria-owns={menuOpen ? 'menu-appbar' : undefined}
-            aria-haspopup="true"
-            onClick={handleMenuOpen}
-            color="inherit"
-          >
             <PowerSettingsNewOutlined />
           </IconButton>
           <Menu
