@@ -12,7 +12,12 @@ import { Switch, Route, withRouter } from "react-router-dom";
 import Charts from "./Charts"
 import Calendar from "../Calendar/Calendar"
 import Services from "../Services/Services";
+import Staff from "../Staff/Staff";
 import Customers from "../Customers/Customers";
+import Marketing from "../Marketing/Marketing";
+import Quotes from "../Quotes/Quotes";
+import Invoices from "../Invoices/Invoices";
+import Reports from "../Reports/Reports";
 
 const drawerWidth = 240;
 
@@ -77,7 +82,12 @@ class Dashboard extends React.Component {
             <Route exact path="/dashboard" component={Charts} />
             <Route path="/dashboard/calendar" component={Calendar} />
             <Route path="/dashboard/services" component={Services} />
+            <Route path="/dashboard/staff" component={Staff} />
             <Route path="/dashboard/customers" component={Customers} />
+            <Route path="/dashboard/marketing" component={Marketing} />
+            <Route path="/dashboard/quotes" component={Quotes} />
+            <Route path="/dashboard/invoices" component={Invoices} />
+            <Route path="/dashboard/reports" component={Reports} />
           </Switch>
         </main>
       </div>
